@@ -1,4 +1,4 @@
-// items = ['aplle', 'banana', 'orange']
+// items = ['apple', 'banana', 'cherry']
 
 export const List = ({ items }) => {
   return (

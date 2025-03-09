@@ -1,13 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { Dashboard } from './Dashboard';
 
-test('Patikriname ar komponentas atvaizduoja h1 teksta', () => {
-  render(<Dashboard />);
-  const text = screen.getByText('Welcome to the Dashboard');
-  expect(text).toBeInTheDocument();
-});
-
-test('Patikriname ar komponentas atvaizduoja h1 teksta', () => {
+test('Tikrinam ar Dashboard atvaizduoja h1', () => {
   render(<Dashboard />);
   const text = screen.getByTestId('h1');
   expect(text).toBeInTheDocument();
@@ -19,7 +13,7 @@ test('Patikriname ar komponentas atvaizduoja mygtuka', () => {
   expect(button).toBeInTheDocument();
 });
 
-test('Patikriname ar komponentas atvaizduoja input elementa', () => {
+test('Patikriname ar komponentas atvaizduoja inputa', () => {
   render(<Dashboard />);
   const input = screen.getByPlaceholderText('Enter your email');
   expect(input).toBeInTheDocument();

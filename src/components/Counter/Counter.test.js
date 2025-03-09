@@ -10,5 +10,10 @@ test('Counter.jsx padidina ir pamazina skaicius', () => {
   const skaiciusParagrafe = screen.getByText('0');
 
   // Pasakome ka jam siuo atveju reikia paspausti, siuo atveju padidintiButton
+  fireEvent.click(pamazintiButton);
+  expect(skaiciusParagrafe).toHaveTextContent('-1');
+
   // Tikriname, ar pradinis skaičius yra 0
+  fireEvent.click(padidintiButton);
+  expect(skaiciusParagrafe).toHaveTextContent('0');
 });

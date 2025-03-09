@@ -1,8 +1,8 @@
-import { render, screen } from '@testing-library/react';
 import { List } from './List';
+import { render, screen } from '@testing-library/react';
 
 test('Tikriname ar atvaizduoja List komponentas darzoves', () => {
-  const items = ['obuolys', 'bananas', 'apelsinas'];
+  const items = ['asdasd'];
   render(<List items={items} />);
   // tikriname ar atvaizduoja darzoves kaip listo elementus
   items.forEach((item) => {
